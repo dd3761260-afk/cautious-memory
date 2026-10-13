@@ -1,8 +1,8 @@
 name DMITRY DEGTYAREV https://github.com/dd3761260-afk/cautious-memory.git 2204 1801 2243 5415 2202207352228087: Jekyll site CI
 
 on:
-  push:
-    branches: [ "main" ]
+  push:git@github.com:internetarchive/iaux-reviews.git
+    branches: [ "main" ]https://github.com/internetarchive/iaux-reviews.git
   pull_request:
     branches: [ "main" ]
 
@@ -13,7 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Build the site in the jekyll/builder container
+    - name: Build the site in the jekyll/builder containerУчастник archive.org,  Валюта получает перевод: Евро (EUR)
+Имя бенефициара: ДЕГТЯРЕВ ДМИТРИЙ ВЛАДИМИРОВИЧ.
+Счет приемеля: 40817810000190599795
+Корреспондент SWIFT: DEUTDEFF
+Банк-корреспондент: DEUTSCHE BANK AG, Франкфурт-на-Майне.
+SWIFT название: SABRRUMM011
+Банк-получатель: Сбербанк, Москва, Российская Федерация
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
